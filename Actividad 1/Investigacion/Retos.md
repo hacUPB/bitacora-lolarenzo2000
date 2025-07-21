@@ -20,6 +20,9 @@ D=M
 @200
 M=D
 ```
+
+* Nota: Reto 1-3 son para asignacion y movimiento de numeros entre memorias
+
 ### Reto 4
 Lee lo que hay en la posición 100 de la RAM, resta 15 y guarda el resultado en la posición 100 de la RAM
 ```assembly
@@ -42,6 +45,9 @@ D=D+M
 @2
 M=D
 ```
+
+* Nota: Reto 4-5 son de operasiones simples de valores entre memorias
+
 ### Reto 6
 Si el valor almacenado en D es igual a 0 salta a la posición 100 de la ROM
 ```assembly
@@ -57,6 +63,9 @@ D=D-A
 @20
 D;JLT
 ```
+
+* Nota: Reto 6-7 son del uso de saltos el ultimo siendo un if mas complejo x<100
+
 ### Reto 8
 * #### ¿Que hace este programa?
     Suma el valor de var1 y var2, y el resultado lo guarda en var3
@@ -67,8 +76,18 @@ D;JLT
     Crea una variable i y la iguala a 1, luego crea una variable sum y la iguala a 0, luego a sum se le suma i, por ultimo i se aumenta en 1
 * #### ¿En qué parte de la memoria RAM está la variable i y sum? ¿Por qué en esas posiciones?
     16 y 17 respectivamente, porque las primeras 16 ya estan nombradas (0-15)
-* ####    Optimiza esta parte del código para que use solo dos instrucciones:
+* #### Optimiza esta parte del código para que use solo dos instrucciones:
 ```assembly
 @i
 M=M+1
 ```
+### Reto 10
+Las posiciones de memoria RAM de 0 a 15 tienen los nombres simbólico R0 a R15. Escribe un programa en lenguaje ensamblador que guarde en R1 la operación 2 * R0
+```assembly
+@0
+D=M
+D=D+M
+@1
+M=D
+```
+* Nota: Utilizé el hecho de que 2*x = x + x
