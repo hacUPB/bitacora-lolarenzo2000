@@ -4,9 +4,11 @@ D=M
 D=D-A
 @draw
 D;JEQ
+D=D-1
 @erase
+D;JEQ
+@0
 0;JMP
-
 (erase)
 	// put bitmap location value in R12
 	// put code return address in R13
