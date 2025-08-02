@@ -1,0 +1,13 @@
+(reset)
+    @SCREEN
+    M=1
+(loop)
+    @SCREEN
+    D=M
+    DM=D+M
+    @32768
+    D=D-A
+    @loop
+    D;JNE
+    @reset
+    0;JMP
