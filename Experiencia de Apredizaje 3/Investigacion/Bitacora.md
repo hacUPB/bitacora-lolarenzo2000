@@ -1,10 +1,12 @@
 # Bitacora
 
 ### Actividad 1
+---
 - #### ¿Cuál es el resultado que se obtiene al ejecutar este programa?  
     Una aplicacion que abre una ventana donde hay un circulo que sigue al mouse
 
 ### Actividad 2
+---
 - #### ¿Qué fue lo que incluimos en el archivo .h?  
     Un vector de particulas y una variable de color
 - #### ¿Cómo funciona la aplicación?  
@@ -19,3 +21,16 @@
     nada
 - #### ¿Qué hace la función draw?  
     Dibuja los circulos
+
+### Actividad 3
+---
+El color (en azul y rojo) cambia dependiendo de la coordenada X (rojo) y Y (azul) del mouse, la cual se consigue con la funcion interna de OpenFrameworks de ```ofGetMouseX()``` y ```ofGetMouseY()```. Verde queda en zero. La funcion de ```mousePressed``` se borra ya que no tiene uso en el codigo.
+``` c++
+void ofApp::mouseMoved(int x, int y) {
+	particles.push_back(ofVec2f(x, y));
+	particleColor = ofColor(ofGetMouseX() / 4, 0, ofGetMouseY() / 3);
+	if (particles.size() > 100) {
+		particles.erase(particles.begin());
+	}
+}
+```
