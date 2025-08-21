@@ -35,7 +35,7 @@ void ofApp::mouseMoved(int x, int y) {
 }
 ```
 
-### Actividad 4
+### Actividad 5
 ---
 - #### ¿Cuál es la definición de un puntero?
   	Es una variable que guarda la direccion de memoria de otra variable
@@ -47,3 +47,14 @@ void ofApp::mouseMoved(int x, int y) {
   	Para guardar el lugar de memoria de la esfera seleccionada
 - #### ¿Qué es exactamente lo que está almacenado en el puntero?
   	La direccion de una instancia de una esfera
+
+### Actividad 6
+El problema es que la vola no se suelta, esto se puede arreglar poniendo la funcion ```mousedragged()``` que detecta cuando se mueve el mouse con una tecla undida moviendo lo que estaba en la funcion ```update()``` dentro de la nueva funcion.
+
+### Actividad 7
+1. ¿Qué sucede cuando presionas la tecla “c”?
+   El programa intenta dibujar una esfera pero no puede, en la esquina superior menciona haberlo hecho
+2. ¿Qué sucede cuando presionas la tecla “c”?
+   Dibuja un circulo en un lugar aleatorio de la ventana y en la esquina superior aparece un mensaje confirmando la creacion de la esfera con sus coordenadas
+3. ¿Porque ocurre esto?
+   Al guardarlo en memoria stack se borra tan pronto se salga de la funcion (una variable local), mientras lo que se guarde en memoria heap no (variable global)
