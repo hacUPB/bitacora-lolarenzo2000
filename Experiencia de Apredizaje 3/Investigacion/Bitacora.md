@@ -34,3 +34,16 @@ void ofApp::mouseMoved(int x, int y) {
 	}
 }
 ```
+
+### Actividad 4
+---
+- #### ¿Cuál es la definición de un puntero?
+  	Es una variable que guarda la direccion de memoria de otra variable
+- #### ¿Dónde está el puntero?
+  	En ```ofApp.h``` con ```Sphere* selectedSphere``` que señala la esfera que sea selleccionada
+- #### ¿Cómo se inicializa el puntero?
+  	Cuando se crea una esfera en el vector ```spheres``` en ```ofApp.cpp setup()```
+- #### ¿Para qué se está usando el puntero?
+  	Para guardar el lugar de memoria de la esfera seleccionada
+- #### ¿Qué es exactamente lo que está almacenado en el puntero?
+  	La direccion de una instancia de una esfera
