@@ -1,5 +1,46 @@
 # Reto
 
+### ofApp.h
+~~~ cpp
+#pragma once
+
+#include "ofMain.h"
+
+class Sphere {
+public:
+	ofVec3f vector;
+	float radius = 10;
+	ofColor color;
+};
+
+class ofApp : public ofBaseApp{
+
+	public:
+		void setup();
+		void update();
+		void draw();
+
+		void updateSpheres();
+
+		void keyPressed(int key);
+		void mousePressed(int x, int y, int button);
+
+		void convertMouseToRay(int mouseX, int mouseY, glm::vec3 & rayStart, glm::vec3 & rayEnd);
+		bool rayIntersectsSphere(const glm::vec3 & rayStart, const glm::vec3 & rayDir, const glm::vec3 & sphereCenter, float sphereRadius, glm::vec3 & intersectionPoint);
+
+		ofEasyCam cam;
+		vector<Sphere> spheres;
+		bool sphereSelected;
+		Sphere selected;
+
+		int cuadricula;
+
+		int xStep, yStep;
+		int distDiv;
+		int amplitud;
+};
+~~~
+### ofApp.cpp
 ~~~ cpp
 #include "ofApp.h"
 
@@ -161,44 +202,4 @@ bool ofApp::rayIntersectsSphere(const glm::vec3 & rayStart, const glm::vec3 & ra
 	}
 }
 
-~~~
-
-~~~ cpp
-#pragma once
-
-#include "ofMain.h"
-
-class Sphere {
-public:
-	ofVec3f vector;
-	float radius = 10;
-	ofColor color;
-};
-
-class ofApp : public ofBaseApp{
-
-	public:
-		void setup();
-		void update();
-		void draw();
-
-		void updateSpheres();
-
-		void keyPressed(int key);
-		void mousePressed(int x, int y, int button);
-
-		void convertMouseToRay(int mouseX, int mouseY, glm::vec3 & rayStart, glm::vec3 & rayEnd);
-		bool rayIntersectsSphere(const glm::vec3 & rayStart, const glm::vec3 & rayDir, const glm::vec3 & sphereCenter, float sphereRadius, glm::vec3 & intersectionPoint);
-
-		ofEasyCam cam;
-		vector<Sphere> spheres;
-		bool sphereSelected;
-		Sphere selected;
-
-		int cuadricula;
-
-		int xStep, yStep;
-		int distDiv;
-		int amplitud;
-};
 ~~~
