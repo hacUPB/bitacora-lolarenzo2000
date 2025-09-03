@@ -29,10 +29,10 @@
     En un programa que crea circulos dibujando con el mouse y esos circulos se pueden borrar aleatoriamente sin que siempre sea el ultimo, una lista seria mas ventajosa porque no habria que reacomodar la memoria cada vez que se borra un circulo.
 
 12. ### Después de estudiar el manejo de memoria en listas enlazadas, ¿Cómo aplicarías este conocimiento para diseñar una estructura de datos personalizada para una aplicación creativa? ¿Qué aspectos considerarías para asegurar la eficiencia y evitar fugas de memoria?
-   Usar clear cuando un objeto desaparesca de la escena, evitar llamar new y delete cada frame, tener cuidado con nodos sueltos.
+    Usar clear cuando un objeto desaparesca de la escena, evitar llamar new y delete cada frame, tener cuidado con nodos sueltos.
 
 13. ### Reflexiona sobre las diferencias en la gestión de memoria entre C++ y un lenguaje con recolección de basura automática como C#. ¿Qué ventajas y desafíos encuentras en la gestión explícita de memoria en C++ al trabajar con estructuras de datos?
-   Con C++ hay mas control de memoria, con el riesgo de un memory leak, C# hay menos control sobre la memoria, con menos probabilidad de un memory leak.
+    Con C++ hay mas control de memoria, con el riesgo de un memory leak, C# hay menos control sobre la memoria, con menos probabilidad de un memory leak.
 
 14. ### Imagina que estás optimizando una pieza de arte generativo que usa listas enlazadas para representar elementos en movimiento. ¿Qué consideraciones tomarías en cuenta para garantizar que la gestión de la memoria sea eficiente y que no ocurran fugas de memoria?
 
