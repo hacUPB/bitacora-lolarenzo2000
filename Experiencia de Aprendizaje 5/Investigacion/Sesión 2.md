@@ -37,4 +37,14 @@
 
 ## Exploración de metodos virtuales
 
-###
+### ¿En qué parte de la memoria se encuentran las vtable de cada objeto?
+---
+    En lugares distintos, una despues de la otra
+
+### ¿Cómo afecta la presencia de métodos virtuales al tamaño del objeto?
+---
+    Aumenta el tamaño del objeto porque introduce un puntero virtual (vptr) adicional
+
+### ¿Qué papel juegan las vtables en el polimorfismo?
+---
+    El puntero vptr apunta a la tabla virtual, que permite la resolucion dinamica de métodos.
