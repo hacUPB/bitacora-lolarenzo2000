@@ -75,4 +75,5 @@ int main() {
 - **¿Qué es un objeto desde la perspectiva de la memoria?**
   Un objeto es un bloque de memoria reservado que contiene los atributos definidos en su clase.
 - **¿Cómo influyen los atributos y métodos en el tamaño y estructura del objeto?**
-  Los atributos afectan el tamaño de loa objetos
+  * Atributos: Si afectan el tamaño del objeto, el tamaño de un objeto es la suma de todos sus atributos.
+  * Metodos: No afectan el tamaño de los objetos, porque estas no se guardan por objeto y todas las instancias comparten los mismos metodos.
