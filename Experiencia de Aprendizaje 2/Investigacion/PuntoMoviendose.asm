@@ -1,0 +1,21 @@
+(reset)
+    @SCREEN
+    M=1
+    @32
+    D=A
+    @KBD
+    D=D-M
+    @mover
+    D;JEQ
+    @reset
+    0;JMP
+(mover)
+    @SCREEN
+    D=M
+    DM=D+M
+    @32768
+    D=D-A
+    @mover
+    D;JNE
+    @reset
+    0;JMP
