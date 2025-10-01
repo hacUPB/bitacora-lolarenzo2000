@@ -21,7 +21,8 @@
   ```  
   ![Particulas en el nuevo estado](NuevoEstado.png)
 - **Modifica el comportamiento de las partículas**  
-  Hice que las particulas hicieran wrapping.
+  Hice que las particulas hicieran wrapping.  
+  <img width="360" height="173" alt="image" src="https://github.com/user-attachments/assets/59d842ee-93e5-40d0-b868-426b9391c463" />
 - **Crea otros eventos para notificar a las partículas**  
   Para la creacion del estado use el sistema de notificaciones  
   ![onNotify](CodigoNotif.png)  
