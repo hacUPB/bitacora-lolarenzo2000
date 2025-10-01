@@ -9,8 +9,8 @@
   Cuando se le notifica al observer, el estado cambia a una nueva instancia del estado al que se esta cambiando, son los estados los que cambian el movimiento de las particulas.
 ## Experimentación
 - **Adiciona un nuevo tipo de partícula**  
-  ![codigo de la nueva particula](image.png)
-  ![Simulacion con nueva particula](image-1.png)
+  ![codigo de la nueva particula](CodigoNuevaParticula.png)
+  ![Simulacion con nueva particula](NuevaParticula.png)
 - **Adiciona un nuevo estado**  
   Un estado que hace que las particulas sigan su movimiento pero en una linea en la mitad de la ventana.  
   ```cpp
@@ -19,10 +19,10 @@
 	particle->position.x += particle->velocity.x;
   }
   ```  
-  ![Particulas en el nuevo estado](image-2.png)
+  ![Particulas en el nuevo estado](NuevoEstado.png)
 - **Modifica el comportamiento de las partículas**  
   Hice que las particulas hicieran wrapping.
 - **Crea otros eventos para notificar a las partículas**  
   Para la creacion del estado use el sistema de notificaciones  
-  ![onNotify](image-1.png)  
-  ![keyPressed](image-2.png)  
+  ![onNotify](CodigoNotif.png)  
+  ![keyPressed](CodigoKeyNotif.png)  
