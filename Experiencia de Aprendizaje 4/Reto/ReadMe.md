@@ -1,0 +1,4 @@
+# Reto 4
+La aplicacion va a ser como el juego snake, donde la serpiente esta en movimiento constante, puede hacer colision con sigo misma y al pasar los bordes de la ventana hace looping al otro lado. La serpiente se va a poder maniobrar con las flechas derecha e izquierda. La serpiente sera segmentada por triangulos La cabeza ampuntando con el vector de movimiento y el resto en contra (<>>>>), donde entre mas alejado de la cabeza mas pequeño es el triangulo.
+
+Habran circulos que pueden ser consumidos para alargar la serpiente, despues de tantos circulos parte de la serpiente se separara y quedara plasmada en el cuadro con un color aleatorio.
