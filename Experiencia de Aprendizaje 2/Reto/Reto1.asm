@@ -1,0 +1,19 @@
+@i
+M=1
+@sum
+M=0
+(while)
+    @i
+    D=M
+    @sum
+    M=D+M
+    @i
+    M=M+1
+    D=M
+    @100
+    D=D-A
+    @while
+    D;JLE
+(loop)
+    @loop
+    0;JMP 
